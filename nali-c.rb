@@ -1,5 +1,5 @@
 class NaliC < Formula
-  desc "xxx"
+  desc "Port of nali to C: add ip geolocation info into text stream"
   homepage "https://github.com/wen-long/nali-c"
   url "https://codeload.github.com/wen-long/nali-c/tar.gz/v0.9.1-beta"
   version "0.9.1"

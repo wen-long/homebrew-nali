@@ -6,7 +6,7 @@ class NaliC < Formula
   sha256 "8d73a88523cd243758a1109261b54f73bd874455e3630cb7e4c31c202fa54451"
 
   depends_on "curl" => :build
-  depends_on "unzip" => :build
+  depends_on "homebrew/dupes/unzip" => :build
   depends_on "innoextract" => :build
 
   def install

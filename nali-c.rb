@@ -1,13 +1,11 @@
 class NaliC < Formula
-  desc "Port of nali to C: add ip geolocation info into text stream"
+  desc "Port of nali to C: Add ip location info on text stream"
   homepage "https://github.com/wen-long/nali-c"
-  url "https://codeload.github.com/wen-long/nali-c/tar.gz/v0.9.1-beta"
-  version "0.9.1"
-  sha256 "8d73a88523cd243758a1109261b54f73bd874455e3630cb7e4c31c202fa54451"
+  url "https://github.com/wen-long/nali-c/archive/0.9.2-beta.tar.gz"
+  version "0.9.2"
+  sha256 "48f525771313b27370742ff31b3fec16529747992094e7a153492533acc24715"
 
-  depends_on "curl" => :build
-  depends_on "homebrew/dupes/unzip" => :build
-  depends_on "innoextract" => :build
+  depends_on "python3" => :build
 
   def install
     system "./configure", "--prefix=#{prefix}"
@@ -16,7 +14,7 @@ class NaliC < Formula
   end
 
   def caveats
-    "Run `nali-update` to update qqwry.Dat"
+    "Run `nali-update` to update QQWry.Dat\nQQWry.Dat is updated every 5 days offically"
   end
 
   test do
